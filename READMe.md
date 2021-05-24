@@ -1,6 +1,6 @@
 # To Do List Application 
 
-## I was given this project by my supervisor during my internship at CYST Company Limited. 
+I was given this project by my supervisor during my internship at CYST Company Limited. 
 
 ### Requirements 
 I should be able to
