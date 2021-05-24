@@ -58,3 +58,15 @@ button {
 input {
     margin-right: 15px;
 }
+
+.showMessage {
+    width: 250px;
+    background-color: rgba(13, 13, 69, 0.4); 
+    margin: 0 auto;
+    top: 50%;
+    left: 20%;
+    padding: 30px;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

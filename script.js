@@ -3,6 +3,11 @@ let allToDoItems = [];
 let allCompletedItems = []; 
 const allToDos = document.getElementById("all-todo-items"); 
 
+let noItem = document.getElementById("showMessage"); 
+if (allToDoItems.length == 0) {
+    noItem.style.display = "block";
+}
+
 addButton.addEventListener('click', () => {
     
     if (allToDoItems.length < 5) {
@@ -11,6 +16,7 @@ addButton.addEventListener('click', () => {
         const newToDoItem = document.createElement('div'); 
         newToDoItem.className = "todoItem"; 
         
+        noItem.style.display = "none";
 
         const inputE = document.createElement('input'); 
         inputE.type = 'checkbox'; 
@@ -23,21 +29,24 @@ addButton.addEventListener('click', () => {
         newToDoItem.appendChild(inputE);
         newToDoItem.appendChild(inputEdiv);
        
-        allToDos.appendChild(newToDoItem)
+        allToDos.appendChild(newToDoItem);
         allToDoItems.push(newToDoItem); 
 
         inputE.addEventListener('click', () => {
             if(inputE.checked) {
-                allToDos.removeChild(inputE.parentNode)
+                allToDos.removeChild(inputE.parentNode); 
+                let removed = allToDoItems.indexOf(inputE.parentNode); 
+                allToDoItems.splice(removed, 1);
             }
-        })
+
+            if (allToDoItems.length == 0) {
+                noItem.style.display = "block";
+            }
+        });
     }
     else {
         alert("You have up to 5 to do items. Clear your schedule to add more...");
     }
     
 }); 
-
-
-
 
