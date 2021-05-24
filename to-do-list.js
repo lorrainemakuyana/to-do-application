@@ -43,16 +43,16 @@ let myToDoList = new ToDoList();
 
 myToDoList.showTasks(); 
 
-myToDoList.addToDo("Eat Lunch");
+myToDoList.addToDo("Intern Check in");
 
-myToDoList.addToDo("Eat Supper");
+myToDoList.addToDo("Complete to-do Application");
 
-myToDoList.addToDo("Code");
+myToDoList.addToDo("Ask for feedback");
 
 myToDoList.showTasks(); 
 
-myToDoList.removeItem("Eat Lunch");
+myToDoList.removeItem("Intern Check in");
 
-myToDoList.markComplete("Code");
+myToDoList.markComplete("Complete to-do Application");
 
 myToDoList.showTasks(); 
