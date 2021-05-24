@@ -27,8 +27,8 @@ addButton.addEventListener('click', () => {
         allToDoItems.push(newToDoItem); 
 
         inputE.addEventListener('click', () => {
-            if(element.checked) {
-                allToDos.removeChild(element.parentNode)
+            if(inputE.checked) {
+                allToDos.removeChild(inputE.parentNode)
             }
         })
     }
