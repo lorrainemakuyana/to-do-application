@@ -21,23 +21,17 @@ button {
 .outer-container {
     height: 400px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    top: 25%;
+    margin-left: 200px;
     border: 3px solid rgb(13,13,69);
+    float: left;
 }
 
-.add-new {
-    width: 460px;
+.add-new { 
+    padding: 14px 0 14px 25px;
     display: flex;
     flex-direction: row;
     background-color: rgba(13, 13, 69, 0.4); 
-}
-
-.add-new {
-    width: 425px;
-    padding: 14px 0 14px 25px;
 }
 
 /*.addButton {
@@ -69,4 +63,42 @@ input {
     position: absolute;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+#removeLink, #addLink {
+    float: right;
+    text-decoration: underline;
+}
+
+.markContainer {
+    height: 700px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 80px 200px 0 100px;
+}
+
+.completedContainer {
+    background-color: lime;
+    width: 400px;
+    height: 250px;
+    border: 2px solid black;
+}
+
+.removeContainer {
+    background-color: red;
+    width: 400px;
+    height: 250px;
+    border: 2px solid black;
+    color: white;
+}
+
+.completedContainer .add-new, .removeContainer .add-new {
+    background-color: white;
+}
+
+#completedItem, #removedItem {
+    padding: 5px 15px;
+    
 }
