@@ -10,3 +10,9 @@ I should be able to
 * filter by completed or incompleted task
 * delete an item from the list
 * BONUS: I should be able to search through the list
+
+All the requirements were met. Some were crushed such that the desing of the application allowed the requirements to be completed by default. 
+
+**Link to deployed application** https://todoapp-project-cyst-2021.netlify.app/ 
+
+I learned about creating HTML Elements in JS and editing the UI with every click on links in the page. I utilized arrays and objects in the application.
